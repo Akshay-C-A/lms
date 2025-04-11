@@ -66,6 +66,10 @@
             }
         ?>
     </table>
+    
+    <br><br>
+
+    <a href="index.php">Back to Home</a>
 
     </body>
 </html>
