@@ -52,6 +52,10 @@
             <button type="submit" name="submit">Assign Book</button>
         </form>
     </div>
+    
+    <br><br>
+
+    <a href="assign_book.php">View assigned Books</a>
 
 </body>
 </html>
