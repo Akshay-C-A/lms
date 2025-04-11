@@ -41,16 +41,31 @@
     <title>Books Assigned</title>
 </head>
 <body>
-<h2>Assigned Books Details</h2>
+    <h2>Assigned Books Details</h2>
 
-<table border="border" cellpadding="10">
-    <tr>
-        <th>Book Name</th>
-        <th>Student Name</th>
-        <th>Issue Date</th>
-        <th>Due Date</th>
-    </tr>
-</table>
+    <table border="border" cellpadding="10">
+        <tr>
+            <th>Book Name</th>
+            <th>Student Name</th>
+            <th>Issue Date</th>
+            <th>Due Date</th>
+        </tr>
+        <?php
+            $query = "SELECT b.title, s.name, bi.issue_date, bi.due_date FROM book_issues bi 
+                    JOIN books b ON bi.book_id = b.book_id 
+                    JOIN students s ON bi.student_id = s.student_id";
+            $result = mysqli_query($conn, $query);
 
-</body>
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "<tr>";
+                    echo "<td>" . $row['title'] . "</td>";
+                    echo "<td>" . $row['name'] . "</td>";
+                    echo "<td>" . $row['issue_date'] . "</td>";
+                    echo "<td>" . $row['due_date'] . "</td>";
+                echo "</tr>";
+            }
+        ?>
+    </table>
+
+    </body>
 </html>

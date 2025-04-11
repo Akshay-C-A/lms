@@ -10,7 +10,7 @@
     <title> Library Management System </title>
 </head>
 <body>
-    <h1>Library Managaement System</h1>
+    <h1>Library Management System</h1>
     <h2>Assign Book</h2>
 
     <div class="form-section">
