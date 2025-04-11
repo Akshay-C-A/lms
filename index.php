@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Management System</title>
+    <title> Library Management System </title>
 </head>
 <body>
     <h1>Library Managaement System</h1>
@@ -44,7 +44,7 @@
 
             <br><br>
 
-            <label for="due_date"> Issue Date: </label>
+            <label for="due_date"> Due Date: </label>
             <input type="date" name="due_date" id="due_date" required>
 
             <br><br>
@@ -52,19 +52,6 @@
             <button type="submit" name="submit">Assign Book</button>
         </form>
     </div>
-
-    <br><br>
-
-    <h2>Assigned Books Details</h2>
-
-    <table border="border" cellpadding="10">
-        <tr>
-            <th>Book Name</th>
-            <th>Student Name</th>
-            <th>Issue Date</th>
-            <th>Due Date</th>
-        </tr>
-    </table>
 
 </body>
 </html>
