@@ -23,7 +23,7 @@
                     $query = "SELECT * FROM books WHERE available = 1 ORDER BY title";
                     $result = mysqli_query($conn, $query);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        echo "<option value='" . $row['id'] . "'>" . $row['title'] . "</option>";
+                        echo "<option value='" . $row['book_id'] . "'>" . $row['title'] . "</option>";
                     }
                 ?>
             </select>
@@ -37,7 +37,7 @@
                     $query = "SELECT * FROM students ORDER BY name";
                     $result = mysqli_query($conn, $query);
                     while ($row = mysqli_fetch_assoc($result)) {
-                        echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
+                        echo "<option value='" . $row['student_id'] . "'>" . $row['name'] . "</option>";
                     }
                 ?>
             </select>
