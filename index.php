@@ -45,7 +45,7 @@
             <br><br>
 
             <label for="due_date"> Issue Date: </label>
-            <input type="date" name="issue_date" id="issue_date" required>
+            <input type="date" name="due_date" id="due_date" required>
 
             <br><br>
 
